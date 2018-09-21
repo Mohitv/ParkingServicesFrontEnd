@@ -1,0 +1,30 @@
+{
+	"id": "98a030be-c88a-7573-8088-5c841b319fa3",
+	"name": "GetMyParkings",
+	"requests": [
+		{
+			"id": "ada1dfbd-1264-15c0-710b-ee0e4c6b6bd9",
+			"headers": "",
+			"url": "https://fierce-plains-52177.herokuapp.com/getMeNearByParkings",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "98a030be-c88a-7573-8088-5c841b319fa3",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://fierce-plains-52177.herokuapp.com/getMeNearByParkings",
+			"description": "get Parking data",
+			"descriptionFormat": "html",
+			"time": 1487135081251,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	],
+	"order": [
+		"ada1dfbd-1264-15c0-710b-ee0e4c6b6bd9"
+	],
+	"timestamp": 1487135081251
+}
