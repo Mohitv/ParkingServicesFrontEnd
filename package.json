@@ -4,7 +4,7 @@
   "description": "Get My Parking Front End Solution",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
-    "start": "npm-run-all --parallel test:watch open:src lint:watch",
+    "start": "npm-run-all --parallel open:src",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
@@ -19,7 +19,7 @@
   "author": "Vivek Bharatia",
   "license": "MIT",
   "dependencies": {
-    "applicationinsights": "^1.0.4",
+    "applicationinsights-js": "^1.0.20",
     "axios": "^0.15.3",
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
