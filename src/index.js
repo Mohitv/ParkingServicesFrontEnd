@@ -17,7 +17,7 @@ import '../node_modules/toastr/build/toastr.min.css';
 import {AppInsights} from "applicationinsights-js"
 
 /* Call downloadAndSetup to download full ApplicationInsights script from CDN and initialize it with instrumentation key */
-AppInsights.downloadAndSetup({ instrumentationKey: "7045e116-16b7-451b-983b-e3b9abac7936" });
+AppInsights.downloadAndSetup({ instrumentationKey: "a5501b4d-866f-4263-a6e3-8b8b7dd538fb" });
 
 /* example: track page view */
 AppInsights.trackPageView(
