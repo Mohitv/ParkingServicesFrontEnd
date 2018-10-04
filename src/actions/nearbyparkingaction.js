@@ -17,7 +17,7 @@ export function BookParkingSuccess(parkingslot) {
 export function loadNearByParkings(lng,lat) {
   return function(dispatch) {
     dispatch(beginAjaxCall());
-    return axios.get('http://sf1dellemc.eastus.cloudapp.azure.com:8080/getMeNearByParkings?lng='+lng+'&lat='+lat).then(parkingslots => {
+    return axios.get('https://devopswebapi27.azurewebsites.net/getMeNearByParkings?lng='+lng+'&lat='+lat).then(parkingslots => {
      console.log(parkingslots);
       dispatch(loadNearByParkingSuccess(parkingslots.data));
     }).catch(error => {
@@ -31,7 +31,7 @@ export function saveBookingParking(bookingObject) {
   return function(dispatch) {
     dispatch(beginAjaxCall());
     //console.log(bookingObject);
-     return axios.post('http://sf1dellemc.eastus.cloudapp.azure.com:8080/updateMyBooking',bookingObject).then(success => {
+     return axios.post('https://devopswebapi27.azurewebsites.net/updateMyBooking',bookingObject).then(success => {
      //console.log(success);
       dispatch(BookParkingSuccess(bookingObject));
       }).catch(error => {
